@@ -1,5 +1,6 @@
 package com.driver.model;
 
+import com.driver.model.Enum.Gender;
 import org.hibernate.annotations.CreationTimestamp;
 import javax.persistence.*;
 import java.util.Date;
