@@ -1,6 +1,7 @@
 package com.driver.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.driver.model.Admin;
 import com.driver.model.Customer;
@@ -10,7 +11,7 @@ public interface AdminService {
 
 	public void adminRegister(Admin admin);
 
-	public Admin updatePassword(Integer adminId, String password);
+	public Optional<Admin> updatePassword(Integer adminId, String password);
 
 	public void deleteAdmin(int adminId);
 

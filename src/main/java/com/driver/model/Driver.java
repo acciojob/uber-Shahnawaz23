@@ -4,6 +4,8 @@ import com.driver.model.Enum.Gender;
 import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.Column;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import java.sql.Date;
 
 public class Driver {
@@ -19,6 +21,7 @@ public class Driver {
 
     int age;
 
+    @Enumerated(EnumType.STRING)
     Gender gender;
 
     @CreationTimestamp
